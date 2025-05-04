@@ -40,6 +40,7 @@ def index():
         prediction = model.predict([[age, bmi, exercise, heart_rate]])[0]
         result = le.inverse_transform([prediction])[0]
     return render_template('index.html', result=result)
+import os
 
 import os
 
